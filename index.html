@@ -3,171 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Md Maruf Hossen | Personal Website</title>
-  <meta name="description" content="Md Maruf Hossen's portfolio website. Projects, skills, and contact info.">
+  <title>Md Maruf Hossen | Portfolio & Showcase</title>
+  <meta name="description" content="Md Maruf Hossen's professional portfolio showcasing projects, skills, and social media presence. Developer, creator, and digital professional.">
+  <meta name="author" content="Md Maruf Hossen">
   <link rel="icon" href="https://github.com/MdMarufHossen71.png" type="image/png">
-  <style>
-    :root {
-      --main: #0a192f;
-      --accent: #64ffda;
-      --bg: #112240;
-      --card: #233554;
-      --text: #ccd6f6;
-      --muted: #8892b0;
-      --font: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-    }
-    body {
-      margin: 0;
-      background: var(--main);
-      color: var(--text);
-      font-family: var(--font);
-    }
-    header {
-      background: var(--bg);
-      padding: 40px 0 30px 0;
-      text-align: center;
-      box-shadow: 0 2px 20px #0004;
-    }
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid var(--accent);
-      margin-bottom: 20px;
-      box-shadow: 0 0 0 8px #64ffdb20;
-      background: #fff;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 10px 0;
-      letter-spacing: 2px;
-    }
-    .bio {
-      color: var(--muted);
-      font-size: 1.15rem;
-      margin-top: 10px;
-      margin-bottom: 8px;
-    }
-    .gh-links {
-      margin-top: 12px;
-      font-size: 1.1rem;
-    }
-    .gh-links a {
-      color: var(--accent);
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .gh-links a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto 0 auto;
-      padding: 0 20px 40px 20px;
-    }
-    section {
-      margin-bottom: 48px;
-    }
-    section h2 {
-      color: var(--accent);
-      font-size: 1.8rem;
-      margin-bottom: 18px;
-      border-bottom: 2px solid var(--card);
-      padding-bottom: 5px;
-      letter-spacing: 1px;
-    }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 8px;
-    }
-    .skill {
-      background: var(--card);
-      color: var(--accent);
-      border-radius: 6px;
-      padding: 8px 16px;
-      font-size: 1rem;
-      letter-spacing: .5px;
-      box-shadow: 0 2px 8px #0002;
-      transition: background .2s;
-    }
-    .skill:hover {
-      background: var(--accent);
-      color: var(--main);
-    }
-    .projects-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
-    }
-    .project-card {
-      background: var(--card);
-      border-radius: 10px;
-      padding: 20px 16px 14px 16px;
-      box-shadow: 0 2px 14px #0003;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 180px;
-      transition: transform .13s, box-shadow .13s;
-    }
-    .project-card:hover {
-      transform: translateY(-4px) scale(1.025);
-      box-shadow: 0 6px 28px #0005;
-    }
-    .project-title {
-      font-size: 1.25rem;
-      color: var(--accent);
-      margin-bottom: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .project-title:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-    .project-desc {
-      color: var(--muted);
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-    .project-info {
-      font-size: .93rem;
-      color: #aaa;
-      margin-top: auto;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-    .project-info span {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .contact-links a {
-      color: var(--accent);
-      font-size: 1.22rem;
-      margin-right: 22px;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .contact-links a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      header img { width: 85px; height: 85px; }
-      h1 { font-size: 1.7rem; }
-      main { padding: 0 6px; }
-      .skills { gap: 8px; }
-      section h2 { font-size: 1.24rem; }
-      .project-card { padding: 14px 8px 10px 8px; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
@@ -180,20 +20,23 @@
       <span id="profile-followers"></span>
     </div>
   </header>
+
   <main>
     <section>
       <h2>About Me</h2>
-      <div id="about">
+      <div class="about-content">
         <p>
-          Hi! I'm <b>Md Maruf Hossen</b>, a passionate developer interested in building cool and useful things on the web.  
-          Welcome to my personal site where you can explore my projects, skills, and get in touch!
+          Hi! I'm <strong>Md Maruf Hossen</strong>, a passionate developer and creator focused on building innovative digital experiences. I love exploring new technologies, contributing to open-source projects, and sharing my journey across various platforms.
+        </p>
+        <p>
+          This portfolio showcases my work, skills, and the many ways you can connect with me online. Feel free to explore my projects and reach out!
         </p>
       </div>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <div class="skills" id="skills-list">
+      <div class="skills">
         <span class="skill">HTML5</span>
         <span class="skill">CSS3</span>
         <span class="skill">JavaScript</span>
@@ -201,72 +44,41 @@
         <span class="skill">Git & GitHub</span>
         <span class="skill">Responsive Design</span>
         <span class="skill">API Integration</span>
-        <!-- Add/remove skills as you want! -->
+        <span class="skill">Web Development</span>
+        <span class="skill">UI/UX Design</span>
+        <span class="skill">Problem Solving</span>
       </div>
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="projects-list" id="projects-list">
-        <!-- Projects will be loaded here -->
+        <p style="color:#aaa;">Loading projects...</p>
       </div>
     </section>
 
     <section>
-      <h2>Contact</h2>
-      <div>
-        <p>Feel free to connect with me:</p>
-        <div class="contact-links">
-          <a href="mailto:mdmarufhossen71@gmail.com" target="_blank">Email</a>
-          <a href="https://github.com/MdMarufHossen71" target="_blank">GitHub</a>
-          <!-- Add more links if you want, e.g., LinkedIn, Twitter, etc. -->
+      <h2>Connect With Me</h2>
+      <div class="contact-section">
+        <p>Find me on various platforms across the web:</p>
+
+        <div class="primary-contact">
+          <a href="mailto:mdmarufhossen@duck.com">Email Me</a>
+          <a href="https://github.com/MdMarufHossen71" target="_blank" rel="noopener">GitHub Profile</a>
+        </div>
+
+        <div class="social-grid" id="social-links-grid">
         </div>
       </div>
     </section>
   </main>
 
-  <script>
-    // Update profile info from GitHub API
-    fetch('https://api.github.com/users/MdMarufHossen71')
-      .then(r => r.json())
-      .then(profile => {
-        document.getElementById('profile-avatar').src = profile.avatar_url || '';
-        document.getElementById('profile-name').textContent = profile.name || profile.login;
-        document.getElementById('profile-bio').textContent = profile.bio || '';
-        if(profile.location) {
-          document.getElementById('profile-location').innerHTML = '📍 ' + profile.location;
-        }
-        if(profile.followers !== undefined) {
-          document.getElementById('profile-followers').innerHTML = '👥 ' + profile.followers + ' followers';
-        }
-      });
+  <footer>
+    <p>&copy; 2025 Md Maruf Hossen. All rights reserved.</p>
+    <p>Built with passion and hosted on <a href="https://github.com/MdMarufHossen71/mdmarufhossen71.github.io" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </footer>
 
-    // Fetch and display latest public repos
-    fetch('https://api.github.com/users/MdMarufHossen71/repos?sort=updated&per_page=6')
-      .then(r => r.json())
-      .then(repos => {
-        const list = document.getElementById('projects-list');
-        if(!Array.isArray(repos)) return;
-        repos.forEach(repo => {
-          // Skip the site repo itself
-          if(repo.name.toLowerCase().includes('github.io')) return;
-          const card = document.createElement('div');
-          card.className = 'project-card';
-          card.innerHTML = `
-            <a class="project-title" href="${repo.html_url}" target="_blank" rel="noopener">${repo.name}</a>
-            <div class="project-desc">${repo.description ? repo.description : 'No description provided.'}</div>
-            <div class="project-info">
-              <span title="Language">💻 ${repo.language || 'N/A'}</span>
-              <span title="Stars">⭐ ${repo.stargazers_count}</span>
-              <span title="Last updated">🕒 ${new Date(repo.updated_at).toLocaleDateString()}</span>
-            </div>
-          `;
-          list.appendChild(card);
-        });
-        if(list.children.length === 0) {
-          list.innerHTML = '<p style="color:#aaa">No public projects to display yet!</p>';
-        }
-      });
-  </script>
+  <script src="js/github-api.js"></script>
+  <script src="js/social-links.js"></script>
 </body>
 </html>
